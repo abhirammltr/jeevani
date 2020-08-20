@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SearchActivity"
+    android:background="@drawable/bg1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_back"
+            android:background="@color/trans"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20dp">
+            <Spinner
+                android:id="@+id/spinner"
+                android:background="@drawable/style_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp" />
+
+            <ImageButton
+                android:id="@+id/searcbt"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="30dp"
+                android:src="@drawable/ic_search"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:background="@drawable/button_search">
+
+            </ImageButton>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textyes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#6BFB70"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:text="രക്തം ലഭ്യമാണ്"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/textno1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0101"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:text="ക്ഷമിക്കണം!!"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/textno2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0101"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:layout_marginTop="1dp"
+            android:textStyle="bold"
+            android:text="തിരഞ്ഞെടുത്ത
+ബ്ലഡ് ഗ്രൂപ്പ് ലഭ്യമല്ല."
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/caller"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="25dp"
+            android:text="ബന്ധപ്പെടുക"
+            android:textColor="#ffffff"
+            android:src="@drawable/ic_call"
+            android:background="@drawable/button_call"
+            android:visibility="gone"/>
+
+
+
+    </LinearLayout>
+</LinearLayout>
